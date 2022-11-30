@@ -85,7 +85,6 @@
         </div>
       </section>
 
-      
       <section class="feature section">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
@@ -644,30 +643,101 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-link">
+          <p class="footer-call">Підпишиться на розсилку</p>
+          <form class="footer-form">
+            <input class="footer-form-input" type="email" name="mail" placeholder="E-mail">
+            <button type="submit" class="footer-btn">Підписатися 
+              <svg class="" width="20" height="20">
+                <use href="./image/icons.svg#telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
-          tempora doloremque hic repellendus animi fuga ut incidunt
-          explicabo unde provident rem quo, neque nobis perferendis amet
-          laborum, laboriosam natus numquam corrupti saepe repellat id
-          perspiciatis quisquam? Natus ipsa dolores, obcaecati officiis vero
-          placeat. Odio fugiat nihil eveniet rem omnis commodi soluta
-          aliquid voluptatum tenetur doloribus porro corrupti fuga iste
-          error nostrum assumenda suscipit ut, laboriosam deleniti a
-          inventore ex qui dolores. Vel, illum. Aut dolores veniam modi
-          voluptatem delectus? Fugit, incidunt unde inventore distinctio
-          dolores magnam vero atque voluptate perferendis, autem itaque a?
-          Quisquam, quo doloremque? Esse ad dolorem quia!
-        </p>
         <button class="close-icon" data-modal-close>
           <svg width="18" height="18">
             <use href="./image/icons.svg#icon-close"></use>
           </svg>
         </button>
+
+        <form class="form">
+          <strong class="form-title"
+            >Залиште свої дані, ми вам передзвонимо</strong
+          >
+
+          <div class="group">
+            <label class="group-field">
+             Ім'я
+              <input
+                class="field"
+                type="text"
+                name="name"
+                placeholder=" "
+                required
+              />
+              <svg class="icon">
+                <use href="./image/icons.svg#person"></use>
+              </svg>
+            </label>
+
+            <label class="group-field">
+              Телефон
+              <input
+                class="field"
+                type="tel"
+                name="tel"
+                placeholder=" "
+                required
+              />
+              <svg class="icon">
+                <use href="./image/icons.svg#tel"></use>
+              </svg>
+            </label>
+            <label class="group-field">
+              Пошта
+              <input
+                class="field"
+                type="email"
+                name="mail"
+                placeholder=" "
+              />
+              <svg class="icon">
+                <use href="./image/icons.svg#modal-email"></use>
+              </svg>
+            </label>
+
+            <div class="comment-field">
+              <p class="form-label">Коментар</p>
+              <textarea
+                class="text-field"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
+          </div>  
+
+            <div class="form-agriment" role="group">
+              <input
+                type="checkbox"
+                name="agrement"
+                id="agrement"
+                class="form-checkbox"
+              />
+              <label class="check-field" for="agrement">
+                <span>Погоджуюсь з розсилкою та приймаю <a href="" class="form-agrement-link">Умови договору</a></span>
+              </label>
+            </div>
+                    
+
+          <button type="submit" class="form-btn">Відправити</button>
+
+        </form>
+
       </div>
     </div>
 

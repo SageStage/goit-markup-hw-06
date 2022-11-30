@@ -1,26 +1,23 @@
 :root {
     --blue-color: #2196f3;
-    --blue-color-hover-button: #188CE8;
+    --blue-color-hover-button: #188ce8;
     --black-gray-color: #212121;
     --light-gray-color: #757575;
     --text-white-color: #fff;
     --text-black-color: #000000;
-    --section-bacground-color: #F5F4FA;
-    --footer-and-hero-bacground-color: #2F303A;
-    --link-gray-color: #AFB1B8;
+    --section-bacground-color: #f5f4fa;
+    --footer-and-hero-bacground-color: #2f303a;
+    --link-gray-color: #afb1b8;
 
     --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     --transition: color var(--timing-function);
     --transitionBgC: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+
     --transition-box-shadow: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -68,9 +65,6 @@ img {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
-
-
 }
 
 .section {
@@ -78,18 +72,15 @@ img {
     padding-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
-
 }
-
 
 /*  ======================= 
     ==== Секция header ====
     =======================
 */
 
-
 header {
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid #ececec;
 }
 
 .header-section {
@@ -177,10 +168,11 @@ header {
 
     position: relative;
 }
+
 .header-nav-active::after {
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -209,11 +201,9 @@ header {
 .header-contact-point:hover,
 .header-contact-point:focus {
     color: var(--blue-color);
-    
 }
 
 .header-icons {
-    
     fill: currentColor;
 }
 
@@ -229,13 +219,14 @@ header {
 
 /*определение цвета фона  для секции герой*/
 .hero {
-
     text-align: center;
 
     max-width: 1600px;
 
     background-color: var(--footer-and-hero-bacground-color);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../image/heder.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%,
+            rgba(47, 48, 58, 0.4) 100%),
+        url(../image/heder.jpg);
     /*background-color: rgba(47, 48, 58, 0.4);*/
 
     background-repeat: no-repeat;
@@ -244,7 +235,6 @@ header {
 
     padding-top: 200px;
     padding-bottom: 200px;
-
 }
 
 /*определение шрифта заголовка первого уровня для секции герой*/
@@ -260,7 +250,6 @@ header {
 
 /*отрисовка кнопки для секции герой*/
 .hero-button {
-
     cursor: pointer;
 
     font-weight: 700;
@@ -276,14 +265,13 @@ header {
     border-color: transparent;
     margin-top: 30px;
     padding: 10px 32px;
-    transition:  var(--transitionBgC);
+    transition: var(--transitionBgC);
 }
 
 /*переопределение цвета кнопки при ховере\фокусе в секции герой*/
 .hero-button:hover,
 .hero-button:focus {
     background-color: var(--blue-color-hover-button);
-
 }
 
 /*     ======================== 
@@ -311,23 +299,21 @@ header {
 
 /*определение списка карточек в секции Особливості. */
 ul.feature-list {
-
     display: flex;
     justify-content: space-between;
 }
 
 /*определение <li> карточек в секции Особливості. */
 li.feature-card:not(:last-child) {
-    
     margin-right: 30px;
 }
 
 .feature-icons {
     width: 70px;
     height: 70px;
-
 }
-div.feature-icons-fone{
+
+div.feature-icons-fone {
     display: flex;
     width: 270px;
     height: 120px;
@@ -336,6 +322,7 @@ div.feature-icons-fone{
     align-items: center;
     margin-bottom: 30px;
 }
+
 /*.feature-icons-fone {
     background-color: var(--section-bacground-color);
     padding: 25px 100px;
@@ -353,52 +340,42 @@ div.feature-icons-fone{
     letter-spacing: 0.03em;
     color: var(--black-gray-color);
     margin-bottom: 50px;
-
 }
 
 .activity {
-
     margin-top: 0;
     padding-bottom: 94px;
-    
-
-    
 }
 
 .ul-activity-list {
     display: flex;
     gap: 30px;
-  
-    
-   
 }
+
 .li-activity-item {
     position: relative;
-  /*  z-index: -1;
-   без отрицательного индекса модальное окно почему-то проходит под содержимым этого тега. Положительные индексы не срабатывают */  
+    /*  z-index: -1;
+   без отрицательного индекса модальное окно почему-то проходит под содержимым этого тега. Положительные индексы не срабатывают */
 }
 
 .activity-h3 {
-position: absolute;
-bottom: 0;
+    position: absolute;
+    bottom: 0;
 
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--text-white-color);
-background: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-white-color);
+    background: rgba(47, 48, 58, 0.8);
 
-height: 70px;
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-
-
-
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*     ======================== 
@@ -407,26 +384,22 @@ align-items: center;
 */
 .teams {
     background-color: var(--section-bacground-color);
-
-
 }
 
 /*формирование карточек в секции Наша команда. */
 .li-teams-card {
-
     width: 270px;
     padding-bottom: 30px;
 
     background-color: var(--text-white-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
 }
 
 .ul-teams-list {
     display: flex;
     gap: 30px;
-
 }
 
 /*определение заголовка карточки секции Наша команда */
@@ -456,12 +429,9 @@ align-items: center;
     justify-content: center;
     align-items: center;
     gap: 10px;
-
-
 }
 
 .social-link {
-
     color: var(--link-gray-color);
 
     background-color: var(--text-white-color);
@@ -474,8 +444,7 @@ align-items: center;
 
     border-radius: 50%;
 
-     transition: var(--transition), var(--transitionBgC);
-
+    transition: var(--transition), var(--transitionBgC);
 }
 
 .social-link:hover,
@@ -484,8 +453,6 @@ align-items: center;
 
     background-color: var(--blue-color);
 }
-
-.li-social-link-item {}
 
 .social-icons {
     width: 20px;
@@ -497,19 +464,17 @@ align-items: center;
     === Секция main -> client ====
        ========================
 */
-.client-logo{
+.client-logo {
     width: 106px;
     height: 60px;
     fill: currentColor;
 }
 
 ul.client-list {
- 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px; 
-   
+    gap: 30px;
 }
 
 a.client-link {
@@ -520,12 +485,11 @@ a.client-link {
     height: 92px;
 
     color: var(--link-gray-color);
-    background-color: var(--text-white-color); 
+    background-color: var(--text-white-color);
     border: 1px solid var(--link-gray-color);
     border-radius: 4px;
-  
-     transition: var(--transition), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
+
+    transition: var(--transition), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
@@ -533,6 +497,7 @@ a.client-link {
     color: var(--blue-color);
     border: 1px solid var(--blue-color);
 }
+
 /*     ======================== 
         === Секция footer ====
        ========================
@@ -551,29 +516,24 @@ a.client-link {
     text-transform: uppercase;
     color: var(--text-white-color);
     margin-bottom: 20px;
-
 }
-
-.footer-link {}
 
 /*Это ссылка <a>*/
 .social-link-footer {
     color: var(--text-white-color);
     background-color: rgba(255, 255, 255, 0.1);
-     width: 44px;
+    width: 44px;
     height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
 
-     transition: var(--transitionBgC);
-
+    transition: var(--transitionBgC);
 }
 
 .social-link-footer:hover,
 .social-link-footer:focus {
-
     background-color: var(--blue-color);
 }
 
@@ -586,7 +546,6 @@ footer {
     background-color: var(--footer-and-hero-bacground-color);
     padding-top: 60px;
     padding-bottom: 60px;
-
 }
 
 address {
@@ -642,14 +601,13 @@ address>ul>li:not(:last-child) {
 
 /*Часть лого web принимает голубой цвет */
 .web-footer {
-    color: var(--blue-color)
+    color: var(--blue-color);
 }
 
 /*  ======================= 
     ==== Portfolio.html ====
     =======================
 */
-
 
 .filter {
     display: flex;
@@ -660,7 +618,7 @@ address>ul>li:not(:last-child) {
 
 /*определям внешний вид кнопок фильтра работ */
 .filter-button {
-    background: #F5F4FA;
+    background: #f5f4fa;
     border-radius: 4px;
     border: none;
     padding: 8px 22px;
@@ -673,7 +631,8 @@ address>ul>li:not(:last-child) {
     cursor: pointer;
     padding: 6px 22px;
 
-    transition: var(--transition), var(--transitionBgC), var(--transition-box-shadow);
+    transition: var(--transition), var(--transitionBgC),
+        var(--transition-box-shadow);
 }
 
 /*переопределяем цвет кнопок фильтра работ при ховере\фокусе\active*/
@@ -682,7 +641,8 @@ address>ul>li:not(:last-child) {
 .filter-button:focus {
     background-color: var(--blue-color);
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 
     color: var(--text-white-color);
@@ -695,24 +655,22 @@ address>ul>li:not(:last-child) {
     gap: 30px;
 }
 
-.li-portfolio-list-card{}
-
 .a-portfolio-list-card-item {
-   display: block;
-   transition: var(--transition-box-shadow);
+    display: block;
+    transition: var(--transition-box-shadow);
 }
 
-
-.tumb{
+.tumb {
     position: relative;
     overflow: hidden;
-   
 }
+
 .a-portfolio-list-card-item:hover .overlay,
 .a-portfolio-list-card-item:active .overlay,
 .a-portfolio-list-card-item:focus .overlay {
     transform: translateY(0);
 }
+
 .overlay {
     position: absolute;
     bottom: 0;
@@ -723,29 +681,29 @@ address>ul>li:not(:last-child) {
     transform: translateY(100%);
     transition: transform var(--timing-function);
 }
+
 .overlay>p {
     color: var(--text-white-color);
     padding: 63px 24px;
     margin: 0;
-    
-font-size: 18px;
-line-height: 1.56;
-letter-spacing: 0.03em;
+
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
 }
 
 .a-portfolio-list-card-item:hover,
 .a-portfolio-list-card-item:active,
 .a-portfolio-list-card-item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 
 .div-portfolio-list-name {
     padding: 20px 24px;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
 }
 
 /*Задаем стиль заголовка карточки проекта*/
@@ -764,6 +722,7 @@ letter-spacing: 0.03em;
     letter-spacing: 0.03em;
     color: var(--light-gray-color);
 }
+
 /*    =====================
      ==== Модальное окно=====
       ======================
@@ -772,26 +731,28 @@ letter-spacing: 0.03em;
     position: fixed;
     top: 0;
     left: 0;
-   
+
     width: 100%;
     height: 100%;
-    background-color:  rgba(0, 0, 0, 0.2);
-    
+    background-color: rgba(0, 0, 0, 0.2);
+
     opacity: 1;
     visibility: visible;
     transition: opacity var(--timing-function), visibility var(--timing-function);
 }
+
 .is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
     transition: opacity var(--timing-function), visibility var(--timing-function);
 }
-.is-hidden .modal{
+
+.is-hidden .modal {
     transform: scale(0.1);
     transition: transform var(--timing-function);
-
 }
+
 .modal {
     position: absolute;
     top: 50%;
@@ -799,13 +760,14 @@ letter-spacing: 0.03em;
     width: 528px;
     height: 581px;
 
-    background-color: #fff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--text-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--timing-function);
-   
+
     z-index: 1000;
 
     display: flex;
@@ -813,6 +775,7 @@ letter-spacing: 0.03em;
     align-items: center;
     padding: 10px;
 }
+
 .close-icon {
     position: absolute;
     top: 8px;
@@ -823,9 +786,244 @@ letter-spacing: 0.03em;
     width: 30px;
     height: 30px;
     padding: 0;
-    background-color: #fff; 
+    background-color: var(--text-white-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    
+}
 
+.close-icon:hover,
+.close-icon:focus {
+    fill: var(--blue-color);
+}
+
+/*    =====================
+     ==== Форма для модального окна=====
+      ======================
+*/
+.form {
+    width: 528px;
+    height: 581px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 35px;
+}
+
+.form-title {
+    display: block;
+    padding-bottom: 12px;
+
+   
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23/20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+label,
+.comment-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    position: relative;
+}
+
+.group-field,
+.form-label {
+    padding-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: var(--light-gray-color);
+    transition: color var(--timing-function);
+}
+
+.field {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    transition: outline var(--timing-function);
+}
+
+.field:focus,
+.text-field:focus {
+    outline-color: var(--blue-color);
+}
+
+.group-field:focus-within {
+    color: var(--blue-color);
+}
+
+.field:focus+.icon {
+    fill: var(--blue-color);
+}
+
+.comment-field:focus-within .form-label {
+    color: var(--blue-color);
+}
+
+.field::placeholder {
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+}
+
+.text-field::placeholder {
+    
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+    
+}
+
+.text-field {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: 1px solid var(--black-gray-color);
+    outline-offset: -1px;
+    transition: outline-color var(--timing-function);
+    padding: 12px 12px;
+
+    resize: none;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-25%);
+}
+
+.form-agriment {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.check-field {
+
+   
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--light-gray-color);
+    user-select: none;
+    transform: translateY(-8%);
+}
+
+.form-agrement-link {
+   
+    
+    font-size: 14px;
+    line-height: 1.71;
+     letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #2196f3;
+    text-underline-offset: 4px;
+}
+
+.form-checkbox {
+    appearance: none;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--black-gray-color);
+    border-radius: 2px;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: outline var(--timing-function);
+}
+
+.form-checkbox:checked {
+    outline: 2px solid var(--blue-color);
+    background-color: var(--blue-color);
+    background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
+}
+
+.form-btn {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+
+    color: var(--text-white-color);
+    background: var(--blue-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+
+    transition: var(--transitionBgC);
+}
+
+.form-btn:hover,
+.form-btn:focus {
+    background-color: var(--blue-color-hover-button);
+}
+
+.footer-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-form-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 16px 15px;
+    color: var(--text-white-color)
+}
+
+.footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--blue-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--text-white-color);
+    transition: var(--transitionBgC);
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+    background-color: var(--blue-color-hover-button);
 }
